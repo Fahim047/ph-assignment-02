@@ -5,6 +5,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>PH - Assignment 02</title>
 		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+			integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 	</head>
 	<body class="bg-black">
 		<header>
@@ -17,25 +24,31 @@
 					<li><a href="/" class="">Contact</a></li>
 					<li><a href="/" class="">About</a></li>
 				</ul>
+				<button class="hamburger-menu text-secondary">
+					<i class="fa-solid fa-bars"></i>
+				</sp>
 			</nav>
 			<!-- Navbar Ends -->
 
 			<!-- Hero Section Starts -->
 			<section
 				id="hero-section"
-				class="container flex justify-between items-center"
+				class="container flex items-center"
 			>
 				<div class="hero-content">
 					<h1 class="hero-title text-white">
 						Get body in <span class="text-miama">shape</span> & stay
 						healthy
 					</h1>
-					<p>
+					<p class="hero-description text-secondary">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
 						Vero vel sed sit modi rerum cumque?
 					</p>
-					<button class="btn btn-primary">Join Club Now</button>
-					<button class="btn btn-transparent">Download App</button>
+					<div class="btn-container flex">
+
+						<button class="btn btn-primary">Join Club Now</button>
+						<button class="btn btn-transparent">Download App</button>
+					</div>
 				</div>
 				<div class="hero-image-container">
 					<img src="./images/hero-image.png" alt="a body builder" />
