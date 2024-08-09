@@ -359,6 +359,17 @@ td {
 		width: 45%;
 	}
 
+	.bmi-chart {
+		width: 100%;
+		margin-bottom: 3rem;
+	}
+	.bmi-calc {
+		width: 100%;
+	}
+	.chart-and-calculator .container {
+		flex-direction: column;
+	}
+
 	.footer-content {
 		flex-direction: column;
 		gap: 3rem;
