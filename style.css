@@ -305,6 +305,36 @@ td {
 	margin-bottom: 0.25rem;
 }
 
+/* Membership Section */
+.pricing-card-list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+}
+.pricing-card {
+	padding: 2rem 1.5rem;
+	display: grid;
+	gap: 2rem;
+	border-radius: 1rem;
+}
+.pricing-card .amount {
+	font-size: 3rem;
+	font-weight: 700;
+	color: var(--primary-color);
+}
+.feature-list {
+	display: grid;
+	gap: 1rem;
+}
+.feature-list li {
+	display: grid;
+	grid-template-columns: 1rem auto;
+	gap: 1rem;
+}
+.feature-list li::before {
+	content: url(./images/check-solid.svg);
+}
+
 /* Footer Section */
 .footer-content {
 	padding: 2rem 0;
@@ -431,6 +461,10 @@ td {
 	}
 
 	.trainer-list {
+		grid-template-columns: 1fr;
+	}
+	/* Membership Section */
+	.pricing-card-list {
 		grid-template-columns: 1fr;
 	}
 
