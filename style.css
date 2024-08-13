@@ -216,6 +216,82 @@ footer {
 	height: auto;
 	border-radius: 1rem;
 }
+/* Training and Exercise Section Styles */
+#training-and-exercise .section-description {
+	width: 60%;
+}
+.exercise-list .row-1 {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+}
+.exercise-item {
+	width: 100%;
+	height: 200px;
+	position: relative;
+}
+.exercise-item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.exercise-item p {
+	position: absolute;
+	color: white;
+}
+.exercise-item::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.row-1 .exercise-item:nth-child(1)::before {
+	background-color: rgba(6, 255, 210, 0.5);
+}
+.row-1 .exercise-item:nth-child(2)::before {
+	background-color: rgba(255, 0, 0, 0.3);
+}
+.row-1 .exercise-item:nth-child(3)::before {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.row-1 .exercise-item:nth-child(1) p {
+	bottom: 1rem;
+	left: 1rem;
+}
+.row-1 .exercise-item:nth-child(2) p {
+	top: 1rem;
+	left: 1rem;
+}
+.row-1 .exercise-item:nth-child(3) p {
+	bottom: 1rem;
+	left: 1rem;
+}
+.exercise-list .row-2 {
+	display: grid;
+	grid-template-columns: 1.75fr 1fr 1.25fr;
+}
+.row-2 .exercise-item:nth-child(1)::before {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.row-2 .exercise-item:nth-child(2)::before {
+	background-color: rgba(66, 255, 0, 0.3);
+}
+.row-2 .exercise-item:nth-child(3)::before {
+	background-color: rgba(0, 71, 255, 0.3);
+}
+.row-2 .exercise-item:nth-child(1) p {
+	top: 1rem;
+	right: 1rem;
+}
+.row-2 .exercise-item:nth-child(2) p {
+	bottom: 1rem;
+	left: 1rem;
+}
+.row-2 .exercise-item:nth-child(3) p {
+	top: 1rem;
+	right: 1rem;
+}
 /* BMI Calculator */
 .chart-and-calculator {
 	padding: 2rem 0;
@@ -459,7 +535,15 @@ td {
 		width: 100%;
 		border-radius: 1rem;
 	}
-
+	/* Training and Exercise Section */
+	.exercise-list .row-1 .exercise-item:nth-child(3),
+	.exercise-list .row-2 .exercise-item:nth-child(3) {
+		display: none;
+	}
+	.exercise-list .row-1,
+	.exercise-list .row-2 {
+		grid-template-columns: 1fr 1fr;
+	}
 	.trainer-list {
 		grid-template-columns: 1fr;
 	}
