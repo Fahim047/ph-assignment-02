@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @font-face {
 	font-family: 'Miama';
 	src: url(./Miama.woff);
@@ -14,7 +14,7 @@
 	font-family: 'Inter', sans-serif;
 }
 body {
-	max-width: 1366px;
+	max-width: 1600px;
 	margin: 0 auto;
 }
 ul {
@@ -28,7 +28,7 @@ a {
 	color: white;
 }
 .container {
-	width: 80%;
+	width: 85%;
 	margin: 0 auto;
 }
 .text-primary {
@@ -126,6 +126,8 @@ nav {
 .hero-title,
 .hero-description {
 	margin-bottom: 2rem;
+}
+.hero-description {
 	width: 85%;
 }
 .btn-container {
@@ -167,13 +169,17 @@ footer {
 	/* padding: 6rem 0; */
 	margin-top: 6rem;
 }
+.section-header {
+	width: 80%;
+	margin: 0 auto;
+}
 .section-title {
 	margin-bottom: 1rem;
 	font-size: 3rem;
 }
 .section-description {
-	margin-bottom: 2rem;
-	font-size: 0.75rem;
+	margin-bottom: 3rem;
+	/* font-size: 0.75rem; */
 }
 /* Change Your Habit Section Styles */
 #change-your-habit {
@@ -198,22 +204,24 @@ footer {
 }
 .habit-item p {
 	font-size: 0.75rem;
+	padding: 0 1rem;
 }
-
 /* Run an Extra Mile */
 #run-extra-mile .container {
-	padding: 1.5rem;
+	padding: 1.75rem;
 	border-radius: 1rem;
 }
 .run-extra-mile-content {
 	width: 40%;
+}
+#run-extra-mile .section-description {
+	margin-bottom: 2rem;
 }
 #run-extra-mile .image-container {
 	width: 50%;
 }
 #run-extra-mile img {
 	width: 100%;
-	height: auto;
 	border-radius: 1rem;
 }
 /* Training and Exercise Section Styles */
@@ -368,7 +376,7 @@ td {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	filter: brightness(90%);
+	filter: brightness(80%);
 	border-radius: 1.5rem;
 }
 .trainer-text {
@@ -422,6 +430,9 @@ td {
 .footer-right {
 	width: 45%;
 }
+.footer-left .logo {
+	margin-bottom: 1.5rem;
+}
 .link-box-1 h4,
 .link-box-2 h4 {
 	font-size: 1.25rem;
@@ -440,13 +451,25 @@ td {
 	.container {
 		width: 90%;
 	}
+	.section-title {
+		font-size: 2.5rem;
+	}
+	.section-description {
+		margin-bottom: 2rem;
+	}
+	main > section,
+	footer {
+		margin-top: 3rem;
+	}
+	.nav-links {
+		gap: 1rem;
+	}
 	#hero-section {
 		flex-direction: column;
 	}
 	.hero-title {
 		font-size: 4rem;
 	}
-	.hero-title,
 	.hero-description {
 		width: 65%;
 	}
@@ -457,14 +480,18 @@ td {
 	.habit-list {
 		grid-template-columns: repeat(2, 1fr);
 	}
-
+	/* Run an Extra Mile */
 	.run-extra-mile-content {
 		width: 50%;
 	}
 	#run-extra-mile .image-container {
 		width: 45%;
 	}
-
+	/* Training and Exercise */
+	#training-and-exercise .section-description {
+		width: 100%;
+	}
+	/* BMI Calculator */
 	.bmi-chart {
 		width: 100%;
 		margin-bottom: 3rem;
@@ -475,10 +502,16 @@ td {
 	.chart-and-calculator .container {
 		flex-direction: column;
 	}
-
+	/* Footer Section */
 	.footer-content {
 		flex-direction: column;
 		gap: 3rem;
+	}
+	.footer-left {
+		width: 60%;
+	}
+	.footer-right {
+		width: 70%;
 	}
 }
 @media screen and (max-width: 576px) {
